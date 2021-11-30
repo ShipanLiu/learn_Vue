@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <script type="text/javascript" src="../js//vue.js"></script>
+</head>
+<body>
+  <div id="root">
+    <h1>你好！{{name}}</h1>  // 这个 {{}} 就是这么指定的。 没有别的。
+  </div>
+  <script type="text/javascript">
+    // 把vue 的 开启时的tip建议关掉
+    Vue.config.productionTip = false;
+
+    // 接下来正式进入Vue
+    new Vue({
+      el: "#root",   // el 用于指定当前Vue实例为哪一个容器服务
+      data: {
+        name: "jiba"
+      }
+    })
+  </script>
+</body>
+</html>
